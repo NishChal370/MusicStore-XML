@@ -1,0 +1,208 @@
+
+/* Full page design with back image */
+fullPage_div{
+    display: flex;
+    flex-direction: column;
+    background-image: url(image/backgroundImage.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Top navigation bar */
+nav_div {
+    background-color:rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    margin-left: 4%;
+    padding-right: 15px;
+    height: fit-content;
+    box-shadow: 5px 10px 8px #888888;
+    
+    
+}
+nav_right{
+    margin-left: 700px;
+    border: 1px green;
+    border-radius: 15px;
+    
+}
+nav_left{
+    position:relative;
+    left: 890px;
+    transform: rotate(-6deg);    
+}
+
+logo{
+    object-fit: cover;
+    background-image: url(image/Logo.png);
+    height: 100px;
+    background-size: 100% 100%;
+    position:relative;
+    padding-bottom: 120px;
+    padding-right: 120px;
+    background-repeat: no-repeat;
+}
+
+nav_title{
+    position:relative;
+    margin-left: 30%;
+    font-size: 400%;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+nav_bottom{
+    color: white;
+    margin-left: -160%;
+    display: flex;
+    flex-direction: row;
+}
+
+nav_website, nav_phone{ margin-left: 30%; }
+
+/* page body */
+body_div{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    width: 80%;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+
+/* apperer shadown on menu touch */
+menu_div:hover, genres_div:hover{ box-shadow: 5px 10px 18px goldenrod; }
+
+menu:hover{
+    background-color: black;
+    color: red;
+}
+
+menu{
+    background-color: white;
+    font-size: 150%;
+    border: 1px solid rgb(36, 31, 27);
+    border-radius: 15px;
+    padding-bottom: 1%;
+    margin-left: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+
+menu_title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 300%;    
+}
+
+menu_list{
+    margin-left: 9%;
+    border-radius: 4px;
+    margin-top: 2%;
+    list-style: none;
+}
+
+/* menu body and bangenres_divgenres_divd member display design */
+menu_body, album_member{
+    display: flex;
+    flex-direction:column;
+}
+
+menu:hover, genres_title:hover{ box-shadow: 5px 10px 18px rgb(190, 1, 1); }
+
+/* Menu and genre design */
+menu_div, genres_div{
+    display: flex;
+    flex-direction: column;
+    background-color:	rgba(0, 0, 0, 0.2);  
+}
+
+/* menu genres div background color */
+menu_title, menu_body, genres_title, genres_body{
+    background-color:	rgba(37, 36, 36, 0.02);
+    border: 1px solid seashell;   
+}
+
+menu_body, genres_body{
+    margin-top: 0.2%;
+    padding-bottom: 3%;
+}
+
+/* Menu genre list design */
+#li1{ padding-left: 10.9%; padding-right: 10.9%;}
+#li2{ padding-left: 10.5%; padding-right: 10.5%; margin-left: 2%}
+#li3{ padding-left: 12.5%; padding-right: 11.5%; margin-left: 2%}
+#li4{ padding-left: 8%; padding-right: 8%;}
+#li5{ padding-left: 5%; padding-right: 4.5%; margin-left: 2%}
+#li6{ padding-left: 9%; padding-right: 9%; margin-left: 2%}
+#li7{ padding-left: 5.8%; padding-right: 6%}
+
+/* Genre detail list design */
+genres_list{ 
+    margin-top: 1%; 
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;}
+
+genres_title{
+    border-radius: 0px 10px 0px 0px;
+    padding-right: 10px;
+}
+
+
+genres_body, album_detail{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+/* Album cover image */
+#floydCover{ background-image: url(image/floydCover.jpg); }
+#kingCover{ background-image: url(image/bbkingCover.jpg); }
+#bearCover{ background-image: url(image/polarCover.jpg); }
+#megadethCover{ background-image: url(image/MegaDeathCover.jpg); }
+#NirvanaCover{ background-image: url(image/NirvanaCover.jpg); }
+#ZeppelinCover{ background-image: url(image/LedZeppelinWallpaper.jpg); }
+#BryanCover{ background-image: url(image/BryanCover.jpg); }
+
+#BryanCover, #ZeppelinCover,#NirvanaCover, #megadethCover, #bearCover, #kingCover,#floydCover {
+    background-size: 100% 100%;
+    width: 50%;
+    height: 60vh;
+    margin-top:1%;
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+album_title{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: large;
+    border-bottom: 2px solid #aaa;
+    
+}
+album_details{
+    display: flex;
+    flex-direction: row;
+}
+album_detail, songs{ margin-left: 2%;}
+
+/* Album detail top margin */
+#floydAlbumDetl,#kingsAlbumDetl, #bearAlbumDetl, #megadethAlbumDetl,#zeppelinAlbumDetl{ margin-top: 12%;}
+#nirvanaAlbumDetl{margin-top: 18%;}
+#bryanAlbumDetl{margin-top: 22%;}
+
+songs{padding-left: 2%;}
+/* song list and Member detail title or headig */
+title, listTitle{ font-weight: bold;}
+
+song{
+    
+    display: list-item;
+    list-style: decimal;
+    padding-left:20px;
+    margin-left:20px;
+}

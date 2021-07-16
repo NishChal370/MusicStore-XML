@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="musicStore">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fullPage_div" type="fullPage" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- fullbody child element -->
+    <xs:complexType name="fullPage">
+        <xs:group ref="fullPageChildElement" />
+    </xs:complexType>
+
+    <xs:group name="fullPageChildElement">
+        <xs:sequence>
+            <xs:element name="nav_div" type="navDiv" />
+            <xs:element name="body_div" type="bodyDiv" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- nav div child element -->
+    <xs:complexType name="navDiv">
+        <xs:group ref="navDivChildElement" />
+    </xs:complexType>
+
+    <xs:group name="navDivChildElement">
+        <xs:sequence> 
+            <xs:element name="nav_left" type="navLeft" />
+            <xs:element name="nav_right" type="navRight" />
+        </xs:sequence>
+    </xs:group>
+    <!-- nav left side -->
+    <xs:complexType name="navLeft">
+        <xs:sequence>
+            <xs:element name="logo" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+<!-- nav right side -->
+    <xs:complexType name="navRight">
+        <xs:group ref="navRightChildElement" />
+    </xs:complexType>
+
+    <xs:group name="navRightChildElement">
+        <xs:sequence> 
+            <xs:element name="nav_title" type="xs:string" />
+            <xs:element name="nav_bottom" type="navBottom" />
+        </xs:sequence>
+    </xs:group>
+    <!-- nav bottom child element -->
+    <xs:complexType name="navBottom">
+        <xs:group ref="navBottomChildElement" />
+    </xs:complexType>
+
+    <xs:group name="navBottomChildElement">
+        <xs:sequence>
+            <xs:element name="nav_address" type="xs:string" />
+            <xs:element name="nav_website" type="xs:string" />
+            <xs:element name="nav_phone" type="xs:string" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- body div child element -->
+    <xs:complexType name="bodyDiv">
+        <xs:group ref="bodyDivChildElement" />
+    </xs:complexType>
+
+    <xs:group name="bodyDivChildElement">
+        <xs:sequence>
+            <xs:element name="menu_div" type="menuDiv" minOccurs="0" maxOccurs="3" />
+            <xs:element name="genres_div" type="genresDiv" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- menu Div child  element -->
+    <xs:complexType name="menuDiv">
+            <xs:group ref="menuDivChildElement" />
+            <xs:attributeGroup ref="menuAttr"/>
+    </xs:complexType>
+
+    <xs:attributeGroup name="menuAttr">
+        <xs:attribute name="mid" type="xs:string"/>
+    </xs:attributeGroup>
+
+
+    <xs:group name="menuDivChildElement">
+        <xs:sequence>
+            <xs:element name="menu_title" type="xs:string" />
+            <xs:element name="menu_body" type="menuBody" />
+        </xs:sequence>
+    </xs:group>
+
+    <!--  menu body child element-->
+    <xs:complexType name="menuBody">
+        <xs:sequence>
+            <xs:element name="menu_list" type="menuList" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- menu list child element -->
+    <xs:complexType name="menuList">
+        <xs:sequence>
+            <xs:element name="menu" type="menu" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" />
+    </xs:complexType>
+
+    <!-- menu child  id  element -->
+    <xs:complexType name="menu">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="id" type="xs:ID" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!-- genres child elements -->
+    <xs:complexType name="genresDiv">
+        <xs:sequence>
+            <xs:element name="genres_list" type="genresList" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID"/>
+    </xs:complexType>
+
+    <!-- Genra list child and attribute element ref -->
+    <xs:complexType name="genresList">
+        <xs:group ref="genresListChildElement" />
+        <xs:attributeGroup ref="genresListAtt" />
+    </xs:complexType>
+
+    <!-- Genra list child element -->
+    <xs:group name="genresListChildElement">
+        <xs:sequence>
+            <xs:element name="genres_title" type="xs:string" />
+            <xs:element name="genres_body" type="genresBody" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Genra list attribute element -->
+    <xs:attributeGroup name="genresListAtt">
+        <xs:attribute name="type" type="xs:ID" />
+        <xs:attribute name="genreId" type="xs:string" use="required" />
+    </xs:attributeGroup>
+
+    <!-- Genra body child element and attribute -->
+    <xs:complexType name="genresBody">
+        <xs:group ref="genresBodyChildElement" />
+        <xs:attribute name="about" type="xs:string" use="required" />
+    </xs:complexType>
+
+    <!-- Genra body child element -->
+    <xs:group name="genresBodyChildElement">
+        <xs:sequence>
+            <xs:element name="genre_origins" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="genre_form" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="genre_parentGenre" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="genre_album" type="genreAlbum" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Genra album child element-->
+    <xs:complexType name="genreAlbum">
+        <xs:group ref="genreAlbumChildElement" />
+        <xs:attribute name="artist" type="xs:string" use="required" />
+    </xs:complexType>
+
+    <xs:group name="genreAlbumChildElement">
+        <xs:sequence>
+            <xs:element name="album_title" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="album_details" type="albumDetails" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="songs" type="songs" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Genra album details child element-->
+    <xs:complexType name="albumDetails">
+        <xs:group ref="albumDetailsChildElement" />
+    </xs:complexType>
+
+        <!-- Songs child elements -->
+    <xs:complexType name="songs">
+        <xs:group ref="songsChildElement" />
+    </xs:complexType>
+
+    <!-- Album detail child element -->
+    <xs:group name="albumDetailsChildElement">
+        <xs:sequence>
+            <xs:element name="album_logo" type="albumLogo" />
+            <xs:element name="album_detail" type="albumDetail" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Album logo attribute -->
+    <xs:complexType name="albumLogo">
+        <xs:attribute name="id" type="xs:ID"/>
+    </xs:complexType>
+
+    <!-- Album detail child element and attribute -->
+    <xs:complexType name="albumDetail">
+        <xs:group ref="albumDetailChildElement" />
+        <xs:attribute name="id" type="xs:ID" />
+    </xs:complexType>
+
+    <!-- Album detail child element  -->
+    <xs:group name="albumDetailChildElement">
+        <xs:sequence> 
+            <xs:element name="artist" type="artist" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="album" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="release" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="recorded" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="album_length" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="studio" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="venue" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="album_member" type="albumMember" minOccurs="0" maxOccurs="1" />
+            <xs:element name="writers" type="xs:string" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Artist child element -->
+    <xs:complexType name="artist">
+        <xs:group ref="artistChildElement" />
+    </xs:complexType>
+
+    <xs:group name="artistChildElement">
+        <xs:sequence>
+            <xs:element name="a_title" type="xs:string" />
+            <xs:element name="data" type="xs:string" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Album member child element and attribute -->
+    <xs:complexType name="albumMember">
+        <xs:group ref="albumMemberChildElemement" />
+        <xs:attribute name="memberType" type="xs:string" />
+    </xs:complexType>
+
+    <!-- Album member child element -->
+    <xs:group name="albumMemberChildElemement">
+        <xs:sequence>
+            <xs:element name="listTitle" type="xs:string" />
+            <xs:element name="member" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Songs child elements -->
+    <xs:group name="songsChildElement">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="song" type="song" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+
+    
+    <xs:complexType name="song">
+        <xs:group ref="songChildElement" />
+    </xs:complexType>
+
+ 
+    <xs:group name="songChildElement">
+        <xs:sequence>
+            <xs:element name="song_name" type="xs:string" />
+            <xs:element name="length" type="xs:string" />
+        </xs:sequence>
+    </xs:group>
+
+
+</xs:schema>

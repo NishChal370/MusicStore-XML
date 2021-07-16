@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT musicStore (fullPage_div?)>
+<!ATTLIST musicStore xmlns:xsi CDATA #REQUIRED>
+<!ATTLIST musicStore xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+
+<!-- Page content -->
+<!ELEMENT fullPage_div (nav_div,  body_div)>
+
+<!-- Navigation bar 'or'  nav:div-->
+<!ELEMENT nav_div ( nav_left, nav_right)>
+<!ELEMENT nav_left (logo)>
+<!ELEMENT logo (#PCDATA)>
+<!-- <!ELEMENT nav_right (#PCDATA)> -->
+<!ELEMENT nav_right ( nav_title, nav_bottom)>
+<!ELEMENT nav_title (#PCDATA)>
+<!ELEMENT nav_bottom (nav_address, nav_website, nav_phone)>
+<!ELEMENT nav_address (#PCDATA)>
+<!ELEMENT nav_website (#PCDATA)>
+<!ELEMENT nav_phone (#PCDATA)>
+
+<!-- body 'or' body:div -->
+<!ELEMENT body_div (menu_div, genres_div)>
+<!-- menu div -->
+<!ELEMENT menu_div (menu_title, menu_body)>
+<!ATTLIST menu_div mid CDATA #REQUIRED>
+
+<!ELEMENT menu_title (#PCDATA)>
+<!ELEMENT menu_body (menu_list)+>
+
+<!ELEMENT menu_list (menu)+>
+<!ATTLIST menu_list id CDATA #REQUIRED>
+<!ELEMENT menu (#PCDATA)>
+<!ATTLIST menu id CDATA #REQUIRED>
+
+<!-- Genres div-->
+<!ELEMENT genres_div (genres_list)+>
+<!ATTLIST genres_div id CDATA #REQUIRED>
+
+<!ELEMENT genres_list (genres_title, genres_body)>
+<!ATTLIST genres_list type CDATA #REQUIRED>
+<!ATTLIST genres_list genreId CDATA #REQUIRED> 
+
+<!ELEMENT genres_title (#PCDATA)>
+<!ELEMENT genres_body (genre_origins?, (genre_form|genre_parentGenre)?, genre_album+)>
+<!ATTLIST genres_body about CDATA #REQUIRED>
+
+<!ELEMENT genre_origins (#PCDATA)>
+<!ELEMENT genre_form (#PCDATA)>
+<!ELEMENT genre_parentGenre (#PCDATA)>
+<!-- Albums -->
+<!ELEMENT genre_album (album_title, album_details, songs)+>
+<!ATTLIST genre_album artist CDATA #REQUIRED>
+
+<!ELEMENT album_title (#PCDATA)>
+<!-- Album details -->
+<!ELEMENT album_details (album_logo, album_detail)>
+<!-- album cover image -->
+<!ELEMENT album_logo (#PCDATA)>
+<!ATTLIST album_logo id CDATA #REQUIRED>
+<!-- album detail -->
+<!ELEMENT album_detail (artist+, album+, release?, recorded?, album_length?, (studio|venue)?, album_member?, writers?)>
+<!ATTLIST album_detail id CDATA #REQUIRED>
+<!ELEMENT artist (a_title,data)>
+<!ELEMENT a_title (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT album (#PCDATA)>
+<!ELEMENT release (#PCDATA)>
+<!ELEMENT recorded (#PCDATA)>
+<!ELEMENT album_length (#PCDATA)>
+<!ELEMENT studio (#PCDATA)>
+<!ELEMENT venue (#PCDATA)>
+
+<!ELEMENT album_member (listTitle, member+)>
+<!ATTLIST album_member memberType CDATA #FIXED "Band_member">
+
+<!ELEMENT listTitle (#PCDATA)>
+<!ELEMENT member (#PCDATA)>
+
+<!ELEMENT writers (#PCDATA)>
+
+<!-- songs -->
+<!ELEMENT songs (title?, song+)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT song (song_name,length)>
+<!ELEMENT length (#PCDATA)>
+<!ELEMENT song_name (#PCDATA)>

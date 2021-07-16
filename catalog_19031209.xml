@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musicStore SYSTEM "catalog_19031209.dtd">
+<?xml-stylesheet type="text/css" href="catalog_19031209.css"?>
+<!-- Nischal Bishwokarma  19031209 -->
+<musicStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_19031209.xsd">
+
+    <fullPage_div>
+        <!-- Navigation -->
+        <nav_div>
+            <nav_left>
+                <logo></logo>
+            </nav_left>
+            <nav_right>
+                <nav_title>Music Store</nav_title>
+                <nav_bottom>
+                    <nav_address>Kamal Pokhari; Kathmandu</nav_address>
+                    <nav_website>wwww.musicStore.com.np</nav_website>
+                    <nav_phone>+977-9805654362</nav_phone>    
+                </nav_bottom>        
+            </nav_right>
+        </nav_div>
+
+        <!-- Body -->
+        <body_div>
+            <menu_div mid="div1">
+                <!-- body main title -->
+                <menu_title>Genre</menu_title>
+                <menu_body>
+                    <!-- Genre List -->
+                    <menu_list id="genreList_01">
+                        <menu id="li1">Rock</menu>
+                        <menu id="li2">Blues</menu>
+                        <menu id="li3">Jazz</menu>
+                    </menu_list>
+                    <menu_list id="genreList_02">
+                        <menu id="li4">Hard Rock</menu>
+                        <menu id="li5">Alternative Rock</menu>
+                        <menu id="li6">Pop Rock</menu>
+                    </menu_list>
+                    <menu_list id="genreList_03">
+                        <menu id="li7">Country Music</menu>
+                    </menu_list>
+                </menu_body>
+            </menu_div>
+
+
+            <!-- Genres Info -->
+            <genres_div id="div2">
+
+                <!-- Genre Number 1 -->
+                <genres_list type="Rock" genreId=" G01">
+                    <genres_title>Rock</genres_title>
+                    <!-- Genre Detail -->
+                    <genres_body about="Rock_Detail">
+                        <genre_origins>Culture origins: 1950s and 1960s</genre_origins>
+                        <genre_form>Derivative forms: Synth-pop, Orchestral pop, Post-progressive, Progressive pop</genre_form>
+                        <!-- Album in this genre -->
+                        <genre_album artist="Pink_Floyd">
+                            <album_title>Pink Floyd - The Dark Side Of The Moon</album_title>
+                            <album_details>
+                                <album_logo id="floydCover"></album_logo>
+                                <!-- Album Detail -->
+                                <album_detail id="floydAlbumDetl">
+                                    <artist><a_title>Artist:</a_title><data>Pink Floyd</data></artist>
+                                    <album>Album: The Dark Side Of The Moon</album>
+                                    <release>Release date: March 1, 1973</release>
+                                    <recorded>Recorded: June 1972 – January 1973</recorded>
+                                    <album_length>Length: 43:09</album_length>
+                                    <studio>Studio: Abbey Road, London</studio>
+                                    <!-- band memeber list -->
+                                    <album_member memberType="Band_member">
+                                        <listTitle>Memeber</listTitle>
+                                        <member>Bassist/Vocalist: Roger Waters</member>
+                                        <member>Guitarist/Vocalist: David Gilmour</member>
+                                        <member>Keyboard/Vocalist: Rick Wright</member>
+                                        <member>Drummer: Nick Mason</member>
+                                    </album_member>
+                                </album_detail>
+                            </album_details>
+                            <!-- Albums Songs -->
+                            <songs>
+                                <title>Songs</title>
+                                <song>
+                                    <song_name>Speak to Me / Breathe</song_name>
+                                    <length>3:58</length>
+                                </song>
+                                <song>
+                                    <song_name>On the Run</song_name>
+                                    <length>3:36</length>
+                                </song>
+                                <song>
+                                    <song_name>Time</song_name>
+                                    <length>6:53</length>
+                                </song>
+                                <song>
+                                    <song_name>The Great Gig in the Sky</song_name>
+                                    <length>4:36</length>
+                                </song>
+                                <song>
+                                    <song_name>Money</song_name>
+                                    <length>6:23</length>
+                                </song>
+                                <song>
+                                    <song_name>Us and Them (original stereo mix)</song_name>
+                                    <length>7:51</length>
+                                </song>
+                                <song>
+                                    <song_name>Any Colour You Like</song_name>
+                                    <length>3:26</length>
+                                </song>
+                                <song>
+                                    <song_name>Brain Damage</song_name>
+                                    <length>3:49</length>
+                                </song>
+                                <song>
+                                    <song_name>Eclipse</song_name>
+                                    <length>2:03</length>
+                                </song>
+                            </songs>
+                        </genre_album>
+                    </genres_body>
+                </genres_list>
+
+                <!-- Genre Number 2-->
+                <genres_list type="Blues" genreId=" G02">
+                    <genres_title>Blues</genres_title>
+                    <!-- Genre Detail -->
+                    <genres_body about="Blues_Detail">
+                        <genre_origins>Culture origins: 1860s, Deep South‎, U.S‎</genre_origins>
+                        <genre_form>Derivative forms: Bluegrass, Country music, Jazz, Jug band, Ragtime, Rhythm and blues, Rock and roll</genre_form>
+                        <!-- Album in this genre -->
+                        <genre_album artist="BB-King">
+                            <album_title>B.B. King - Live at the Regal</album_title>
+                            <!-- Album Detail -->
+                            <album_details>
+                                <album_logo id="kingCover"></album_logo>
+                                <album_detail id="kingsAlbumDetl">
+                                    <artist><a_title>Artist:</a_title><data>B.B. King</data></artist>
+                                    <album>Album: Live at the Regal</album>
+                                    <release>Release date: 1965 (LP) 1997 (CD)</release>
+                                    <recorded>Recorded: November 1964</recorded>
+                                    <album_length>Length: 34:46</album_length>
+                                    <venue>Venue: Regal Theater, Chicago, Illinois</venue>
+                                    <album_member memberType="Band_member">
+                                        <listTitle>Memeber</listTitle>
+                                        <member>Bassist: Leo Lauchie</member>
+                                        <member>Trumpet: Kenneth Sands</member>
+                                        <member>Piano: Duke Jethro</member>
+                                        <member>Drummer: Sonny Freeman</member>
+                                        <member>Tenor Saxophone: Bobby Forte and Johnny Board</member>
+                                    </album_member>
+                                </album_detail>
+                            </album_details>
+                            <!-- Albums Songs -->
+                            <songs>
+                                <title>Songs</title>
+                                <song>
+                                    <song_name>Every Day I Have the Blues</song_name>
+                                    <length>2:38</length>
+                                </song>
+                                <song>
+                                    <song_name>Sweet Little Angel</song_name>
+                                    <length>4:12</length>
+                                </song>
+                                <song>
+                                    <song_name>It's My Own Fault</song_name>
+                                    <length>3:29</length>
+                                </song>
+                                <song>
+                                    <song_name>How Blue Can You Get</song_name>
+                                    <length>3:44</length>
+                                </song>
+                                <song>
+                                    <song_name>Please Love Me</song_name>
+                                    <length>3:01</length>
+                                </song>
+                                <song>
+                                    <song_name>You Upset Me Baby</song_name>
+                                    <length>2:22</length>
+                                </song>
+                            </songs>
+                        </genre_album>
+                    </genres_body>
+                </genres_list>
+
+                <!-- Genre Number 3-->
+                <genres_list type="Jazz" genreId=" G03">
+                    <genres_title>Jazz</genres_title>
+                    <!-- Genre Detail -->
+                    <genres_body about="Jazz_Detail">
+                        <genre_origins>Culture origins: Late 19th century, New Orleans, U.S</genre_origins>
+                        <genre_parentGenre>Parent genres: Blues, Folk music, Ragtime, Guitar Mashing, Work song</genre_parentGenre>
+                        <!-- Album in this genre -->
+                        <genre_album artist="Polar-Bear">
+                            <album_title>POLAR BEAR - HELD ON THE TIPS OF FINGERS (BABEL)</album_title>
+                            <!-- Album Detail -->
+                            <album_details>
+                                <album_logo id="bearCover"></album_logo>
+                                <album_detail id="bearAlbumDetl">
+                                    <artist><a_title>Artist:</a_title><data>Polar Bear</data></artist>
+                                    <album>Album: Held on the Tips of Fingers</album>
+                                    <release>Release date: March 21, 2005</release>
+                                    <!-- <album:recorded>Recorded:</album:recorded> -->
+                                    <album_length>Length: 37:00</album_length>
+                                    <studio>Studio: Snake Ranch and Exchange Studios</studio>
+                                    <!-- band member list -->
+                                    <album_member memberType="Band_member">
+                                        <listTitle>Memeber</listTitle>
+                                        <member>Tenor Saxophone: Pete Wareham</member>
+                                        <member>Tenor Saxophone: Mark Lockheart</member>
+                                        <member>Double Bass: Tom Herbert</member>
+                                        <member>Drummer: Sebastian Rochford</member>
+                                        <member>Electronics: Leafcutter John</member>
+                                    </album_member>
+                                </album_detail>
+                            </album_details>
+                            <!-- Albums Songs -->
+                            <songs>
+                                <title>Songs</title>
+                                <song>
+                                    <song_name>Was Dreaming You Called, You Disappeared I Slept</song_name>
+                                    <length>2:09</length>
+                                </song>
+                                <song>
+                                    <song_name>Beartown</song_name>
+                                    <length>5:54</length>
+                                </song>
+                                <song>
+                                    <song_name>Fluffy (I Want You)</song_name>
+                                    <length>5:17</length>
+                                </song>
+                                <song>
+                                    <song_name>To Touch The Red Brick</song_name>
+                                    <length>2:51</length>
+                                </song>
+                                <song>
+                                    <song_name>Held On The Tips Of Fingers</song_name>
+                                    <length>5:16</length>
+                                </song>
+                                <song>
+                                    <song_name>Argumentative</song_name>
+                                    <length>4:06</length>
+                                </song>
+                            </songs>
+                        </genre_album>
+                    </genres_body>
+                </genres_list>
+
+                <!-- Genre Number 4-->
+                <genres_list type="HardRock" genreId=" G04">
+                    <genres_title>Hard Rock</genres_title>
+                    <!-- Genre Detail -->
+                    <genres_body about="HardRock_Detail">
+                        <genre_origins>Culture origins: : Late 1960s, United Kingdom and United States</genre_origins>
+                        <genre_parentGenre>Parent genres: Rock, Hard rock, Rock and roll, Psychedelic rock, Blues rock, Garage rock</genre_parentGenre>
+                        <!-- Album in this genre -->
+                        <genre_album artist="Megadeth">
+                            <album_title>Megadeth - Rust in Peace</album_title>
+                            <!-- Album Detail -->
+                            <album_details>
+                                <album_logo id="megadethCover"></album_logo>
+                                <album_detail id="megadethAlbumDetl">
+                                    <artist><a_title>Artist:</a_title><data>Megadeth</data></artist>
+                                    <album>Album: Rust in Peace</album>
+                                    <release>Release date: September 24, 1990</release>
+                                    <recorded>Recorded: 1989–1990</recorded>
+                                    <album_length>Length:  40:44</album_length>
+                                    <studio>Studio: Rumbo Recorders, Canoga Park, Los Angeles</studio>
+                                    <!-- band member list -->
+                                    <album_member memberType="Band_member">
+                                        <listTitle>Memeber</listTitle>
+                                        <member>Lead vocals, Lead and Rhythm guitars: Pete Wareham</member>
+                                        <member>Bass, Backing vocals: David Ellefson</member>
+                                        <member>Lead and Rhythm guitars: Tom Herbert</member>
+                                        <member>Drums, Backing vocals: Sebastian Rochford</member>
+                                    </album_member>
+                                </album_detail>
+
+                            </album_details>
+                            <!-- Albums Songs -->
+                            <songs>
+                                <title>Songs</title>
+                                <song>
+                                    <song_name>Holy Wars... The Punishment Due</song_name>
+                                    <length>6:36</length>
+                                </song>
+                                <song>
+                                    <song_name>Hangar 18</song_name>
+                                    <length>5:14</length>
+                                </song>
+                                <song>
+                                    <song_name>Take No Prisoners</song_name>
+                                    <length>3:28</length>
+                                </song>
+                                <song>
+                                    <song_name>Five Magics</song_name>
+                                    <length>5:42</length>
+                                </song>
+                                <song>
+                                    <song_name>Poison Was the Cure</song_name>
+                                    <length>2:58</length>
+                                </song>
+                                <song>
+                                    <song_name>Lucretia</song_name>
+                                    <length>3:58</length>
+                                </song>
+                            </songs>
+                        </genre_album>
+                    </genres_body>
+                </genres_list>
+
+                <!-- Genre Number 5-->
+                <genres_list type="AlternativeRock" genreId=" G05">
+                    <genres_title>Alternative rock</genres_title>
+                    <!-- Genre Detail -->
+                    <genres_body about="AlternativeRock_Detail">
+                        <genre_origins>Culture origins: : Late 1970s and the early 1980s, United Kingdom and United States</genre_origins>
+                        <genre_parentGenre>Parent genres: Rock, Heavy metal, Punk rock, New wave, Hardcore punk, Post-punk</genre_parentGenre>
+                        <!-- Album in this genre -->
+                        <genre_album artist="Nirvana">
+                            <album_title>Nirvana - Nevermind</album_title>
+                            <!-- Album Detail -->
+                            <album_details>
+                                <album_logo id="NirvanaCover"></album_logo>
+                                <album_detail id="nirvanaAlbumDetl">
+                                    <artist><a_title>Artist:</a_title><data>Nirvana</data></artist>
+                                    <album>Album: Nevermind</album>
+                                    <release>Release date: September 24, 1991</release>
+                                    <recorded>Recorded: April 1990; May 2–19, June 1991</recorded>
+                                    <album_length>Length:  49:07</album_length>
+                                    <studio>Studio: Sound City, Van Nuys, California; Smart, Madison, Wisconsin</studio>
+                                    <writers>Writers: Chet Powers, Dave Grohl, Krist Novoselic and Kurt Cobain</writers>
+                                </album_detail>
+                            </album_details>
+                            <!-- Albums Songs -->
+                            <songs>
+                                <title>Songs</title>
+                                <song>
+                                    <song_name>Smells Like Teen Spirit</song_name>
+                                    <length>5:01</length>
+                                </song>
+                                <song>
+                                    <song_name>In Bloom</song_name>
+                                    <length>4:14</length>
+                                </song>
+                                <song>
+                                    <song_name>Come as You Are</song_name>
+                                    <length>3:39</length>
+                                </song>
+                                <song>
+                                    <song_name>Breed</song_name>
+                                    <length>3:03</length>
+                                </song>
+                                <song>
+                                    <song_name>Lithium</song_name>
+                                    <length>4:17</length>
+                                </song>
+                                <song>
+                                    <song_name>Polly</song_name>
+                                    <length>2:57</length>
+                                </song>
+                            </songs>
+                        </genre_album>
+                    </genres_body>
+                </genres_list>
+
+                <!-- Genre Number 6-->
+                <genres_list type="PopRock" genreId=" G06">
+                    <genres_title>Pop rock</genres_title>
+                    <!-- Genre Detail -->
+                    <genres_body about="PopRock_Detail">
+                        <genre_origins>Culture origins: Late 1950s</genre_origins>
+                        <genre_parentGenre>Parent genres: Rock, Pop music</genre_parentGenre>
+                        <!-- Album in this genre -->
+                        <genre_album artist="Led-Zeppelin">
+                            <album_title>Led Zeppelin - Led Zeppelin II</album_title>
+                            <!-- Album Detail -->
+                            <album_details>
+                                <album_logo id="ZeppelinCover"></album_logo>
+                                <album_detail id="zeppelinAlbumDetl">
+                                    <artist><a_title>Artist:</a_title><data>Led Zeppelin</data></artist>
+                                    <album>Album: Led Zeppelin II</album>
+                                    <release>Release date: 22 October 1969</release>
+                                    <recorded>Recorded: April–August 1969</recorded>
+                                    <album_length>Length:  49:07</album_length>
+                                    <studio>Studio: Sound City, Van Nuys, California; Smart, Madison, Wisconsin</studio>
+                                    <!-- band meber list -->
+                                    <album_member memberType="Band_member">
+                                        <listTitle>Memeber</listTitle>
+                                        <member>Drums, Backing vocals: John Bonham</member>
+                                        <member>Bass guitar, Organ, Backing vocals: John Paul Jones</member>
+                                        <member>Gitars, Theremin, Backing vocals: Jimmy Page</member>
+                                        <member>Lead vocals, Harmonica: Robert Plant</member>
+                                    </album_member>
+                                </album_detail>
+                            </album_details>
+                            <!-- Albums Songs -->
+                            <songs>
+                                <title>Songs</title>
+                                <song>
+                                    <song_name>Smells Like Teen Spirit</song_name>
+                                    <length>5:01</length>
+                                </song>
+                                <song>
+                                    <song_name>In Bloom</song_name>
+                                    <length>4:14</length>
+                                </song>
+                                <song>
+                                    <song_name>Come as You Are</song_name>
+                                    <length>3:39</length>
+                                </song>
+                                <song>
+                                    <song_name>Breed</song_name>
+                                    <length>3:03</length>
+                                </song>
+                                <song>
+                                    <song_name>Lithium</song_name>
+                                    <length>4:17</length>
+                                </song>
+                                <song>
+                                    <song_name>Polly</song_name>
+                                    <length>2:57</length>
+                                </song>
+                            </songs>
+                        </genre_album>
+                    </genres_body>
+                </genres_list>
+
+
+                <!-- Genre Number 7-->
+                <genres_list type="countryMusic" genreId=" G07">
+                    <genres_title>Country music</genres_title>
+                    <!-- Genre Detail -->
+                    <genres_body about="countryMusic_Detail">
+                        <genre_origins>Culture origins: 1920s, Southern U.S.</genre_origins>
+                        <genre_parentGenre>Parent genres: Blues, Old-time music, Spirituals, Celtic music</genre_parentGenre>
+                        <!-- Album in this genre -->
+                        <genre_album artist="Luke-Bryan">
+                            <album_title>Luke Bryan -Crash My Party</album_title>
+                            <!-- Album Detail -->
+                            <album_details>
+                                <album_logo id="BryanCover"></album_logo>
+                                <album_detail id="bryanAlbumDetl">
+                                    <artist><a_title>Artist:</a_title><data>Luke Bryan</data></artist>
+                                    <album>Album: Crash My Party</album>
+                                    <release>Release date: August 13, 2013</release>
+                                    <recorded>Recorded: 2013</recorded>
+                                    <album_length>Length:  44:32</album_length>
+                                    <writers>Writers: Dallas Davidson, Chris DeStefano, Ashley Gorley, Michael Carter, Brandon Kinney</writers>
+                                </album_detail>
+                            </album_details>
+                            <!-- Albums Songs -->
+                            <songs>
+                                <title>Songs</title>
+                                <song>
+                                    <song_name>That's My Kind of Night</song_name>
+                                    <length>3:10</length>
+                                </song>
+                                <song>
+                                    <song_name>Beer in the Headlights</song_name>
+                                    <length>2:52</length>
+                                </song>
+                                <song>
+                                    <song_name>Crash My Party</song_name>
+                                    <length>3:54</length>
+                                </song>
+                                <song>
+                                    <song_name>Roller Coaster</song_name>
+                                    <length>4:19</length>
+                                </song>
+                                <song>
+                                    <song_name>We Run This Town</song_name>
+                                    <length>3:14</length>
+                                </song>
+                                <song>
+                                    <song_name>Drink a Beer</song_name>
+                                    <length>3:23</length>
+                                </song>
+                            </songs>
+                        </genre_album>
+                    </genres_body>
+                </genres_list>
+            </genres_div>
+        </body_div>
+
+    </fullPage_div>
+</musicStore>
